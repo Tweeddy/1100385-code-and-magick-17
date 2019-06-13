@@ -40,7 +40,7 @@ window.renderStatistics = function (ctx, names, times) {
   for (var i = 0; i < names.length; i++) {
     ctx.fillStyle = 'black';
     ctx.fillText(names[i], COLUMN_X + i * (COLUMN_WIDTH + COLUMN_SPACE), 270);
-    names[i] === 'Вы' ? ctx.fillStyle = 'rgba(255, 0, 0, 1)' : ctx.fillStyle = 'rgba(0,83,138,' + getRandomNumber(0.2, 0.9) + ')';
+    ctx.fillStyle = names[i] === 'Вы' ? 'rgba(255, 0, 0, 1)' : 'rgba(0,83,138,' + getRandomNumber(0.2, 0.9) + ')';
     ctx.fillRect(COLUMN_X + i * (COLUMN_WIDTH + COLUMN_SPACE), COLUMN_Y, COLUMN_WIDTH, COLUMN_HEIGHT * times[i] / maxTime * (-1));
   }
 
