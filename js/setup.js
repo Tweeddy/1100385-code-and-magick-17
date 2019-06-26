@@ -26,7 +26,7 @@ var generateWizard = function (firstName, surname, colorsForCoat, colorsForEyes)
 
 var createWizard = function () {
   var wizardList = [];
-  for (var i = 0; i < WIZARDS_NUMBER ; i++) {
+  for (var i = 0; i < WIZARDS_NUMBER; i++) {
     var wizardShape = generateWizard(FIRST_NAME, SURNAME, COLORS_FOR_COAT, COLORS_FOR_EYES);
     wizardList[i] = wizardShape;
   }
